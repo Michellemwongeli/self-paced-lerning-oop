@@ -94,3 +94,52 @@ class Supervisor extends Customer{
 // echo $customer->getPass();
 $supervisor = new Supervisor; 
 ?>
+
+<?php
+class Customer {
+	public $name = 'Michelle';
+	private $password ='12390877' 
+	protected $email = 'abc@gmail.com'; 
+
+public function getName($name){
+	return $this->name;
+}
+public function getPass($password){
+	return $this->password;
+}
+}
+class Boss extends Customer(){
+public function __construct(){
+	echo $this->email;
+
+}
+}
+// $customer = new Customer();
+// echo $customer->getName();
+$boss = new Boss;
+
+?>
+
+<?
+class Customer {
+	public $name = 'Cyrille';
+	private $password = '2390876';
+	protected $email = 'def@gmail.com';
+
+public function getPass(){
+	return $this->password;
+}
+}
+class Boss extends Customer(){
+	public function __construct(){
+		echo $this->email;
+	}
+}
+// $customer = new Customer();
+// echo $customer->name;
+// echo "<br/>";
+// echo $customer->getPass();
+
+$boss = new Boss();
+
+?>

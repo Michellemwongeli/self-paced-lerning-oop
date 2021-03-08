@@ -69,3 +69,50 @@ echo "<br/>";
 Being::incr();
 echo Being::$number;
 ?> 
+
+<?php
+class Consumer {
+	public $name;
+
+static public function getName($name){
+	return 'Michelle';
+
+}
+}
+// $Consumer = new Consumer();
+// echo $consumer->getName();
+echo Consumer::getName();
+// ?>
+<?php
+class User {
+	static public $name = 'Michelle';
+
+public function getName(){
+	return $this->$name = 'Michelle';
+
+}
+}
+
+echo Person::$name;
+?>
+
+<?php
+class User {
+	static public $name = 'Michelle';
+
+public function getName($name){
+	return $this->name = 'Michelle';
+}
+}
+echo User::$name;
+?>
+<?php
+class User {
+	static public $name = 'Michelle';
+
+public function getName($name){
+	return $this->name = 'Michelle';
+}
+}
+echo User::$name;
+?>
